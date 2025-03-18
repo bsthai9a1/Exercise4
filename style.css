@@ -1,0 +1,72 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode Support */
+[data-bs-theme="dark"] {
+    background-color: #121212;
+    color: #f8f9fa;
+}
+
+/* Card Styling */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar Styles */
+.sidebar .list-group-item {
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sidebar .list-group-item:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+.btn {
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* Dark Mode Toggle Button */
+#darkModeToggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+/* Contact Form */
+form .form-control {
+    border-radius: 5px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
+/* Dark Mode Support */
+[data-bs-theme="dark"] {
+    background-color: #121212 !important; /* Áp dụng nền tối cho toàn trang */
+    color: #f8f9fa;
+}
+
+/* Đổi màu nền của các card trong Dark Mode */
+[data-bs-theme="dark"] .card {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: 1px solid #333;
+}
